@@ -1,0 +1,361 @@
+file 1006359 1501606125                                         
+version 2
+run SinusoidalJammingDetail-711-20170801-18:48:27-38347
+attr CACCSpacing 11
+attr attackAcc -30
+attr attackPos 7
+attr attackSpeed 150
+attr attackStart 32
+attr attacker 1
+attr beaconInterval 0.1
+attr configname SinusoidalJammingDetail
+attr controller 1
+attr datetime 20170801-18:48:27
+attr experiment SinusoidalJammingDetail
+attr fakeAcc "(1 == 4)"
+attr fakePos "(1 == 2)"
+attr fakeSpeed "(1 == 3)"
+attr inifile omnetpp_711.ini
+attr iterationvars "$leaderSpeed=150, $controller=1, $CACCSpacing=11, $sController=\"CACC\", $attacker=1, $attackStart=32, $attackSpeed=150, $attackPos=7, $attackAcc=-30, $0=11, $1=0, $nCars=8, $platoonSize=8, $nLanes=1, $beaconInterval=0.1, $priority=2, $packetSize=200, $ploegH=0.5, $leaderHeadway=1.2, $fakeSpeed=(1 == 3), $fakeAcc=(1 == 4), $fakePos=(1 == 2)"
+attr iterationvarsf leaderSpeed=150,controller=1,CACCSpacing=11,sController=CACC,attacker=1,attackStart=32,attackSpeed=150,attackPos=7,attackAcc=-30,11,0,nCars=8,platoonSize=8,nLanes=1,beaconInterval=0.1,priority=2,packetSize=200,ploegH=0.5,leaderHeadway=1.2,fakeSpeed=(1_==_3),fakeAcc=(1_==_4),fakePos=(1_==_2)-
+attr leaderHeadway 1.2
+attr leaderSpeed 150
+attr measurement "$leaderSpeed=150, $controller=1, $CACCSpacing=11, $sController=\"CACC\", $attacker=1, $attackStart=32, $attackSpeed=150, $attackPos=7, $attackAcc=-30, $0=11, $1=0, $nCars=8, $platoonSize=8, $nLanes=1, $beaconInterval=0.1, $priority=2, $packetSize=200, $ploegH=0.5, $leaderHeadway=1.2, $fakeSpeed=(1 == 3), $fakeAcc=(1 == 4), $fakePos=(1 == 2)"
+attr nCars 8
+attr nLanes 1
+attr network scenario
+attr packetSize 200
+attr platoonSize 8
+attr ploegH 0.5
+attr priority 2
+attr processid 38347
+attr repetition 1
+attr replication #1
+attr resultdir results
+attr runnumber 711
+attr sController "\"CACC\""
+attr seedset 1
+param **.coreDebug false
+param **.debug false
+param **.headway 0.1s
+param **.numberOfCars 8
+param **.numberOfCarsPerPlatoon 8
+param **.numberOfLanes 1
+param **.numericController 1
+param **.traffic.nCars 8
+param **.traffic.nLanes 1
+param **.traffic.platoonInsertDistance 11m
+param **.traffic.platoonInsertHeadway 0s
+param **.traffic.platoonInsertSpeed 150kmph
+param **.traffic.platoonInsertTime "1 s"
+param **.traffic.platoonLeaderHeadway 1.2s
+param **.traffic.platoonSize 8
+param **.traffic.platooningVType "\"vtypeauto\""
+param **.traffic_type "\"PlatoonsTrafficManager\""
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.mac1609_4.txPower 100mW
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.maxTXPower 100mW
+param *.**.nic.phy80211p.sensitivity -94dBm
+param *.**.nic.phy80211p.thermalNoise -95dBm
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.useThermalNoise true
+param *.annotations.draw false
+param *.connectionManager.alpha 2.0
+param *.connectionManager.carrierFrequency "5.890e9 Hz"
+param *.connectionManager.pMax 100mW
+param *.connectionManager.sat -94dBm
+param *.connectionManager.sendDirect true
+param *.manager.autoShutdown true
+param *.manager.commandLine "\"sumo --remote-port $port --seed $seed --configuration-file $configFile\""
+param *.manager.configFile "\"./sumocfg/freeway.sumo.cfg\""
+param *.manager.host "\"localhost\""
+param *.manager.margin 25
+param *.manager.moduleDisplayString "\"\""
+param *.manager.moduleName "\"node\""
+param *.manager.moduleType "\"Car\""
+param *.manager.updateInterval 0.01s
+param *.node[*].appl.attackStart 32s
+param *.node[*].appl.attackerType 1
+param *.node[*].appl.simulationDuration "60 s"
+param *.node[*].appl_type "\"SimplePlatooningApp\""
+param *.node[*].helper.nCars 8
+param *.node[*].helper.nLanes 1
+param *.node[*].helper.platoonSize 8
+param *.node[*].helper_type "\"PositionHelper\""
+param *.node[*].mobility.x 0
+param *.node[*].mobility.y 0
+param *.node[*].mobility.z 1.895
+param *.node[*].prot.attackStart 32s
+param *.node[*].prot.attackerType 1
+param *.node[*].prot.attackingNode 3
+param *.node[*].prot.beaconingInterval 0.1s
+param *.node[*].prot.fakeAcc "(1 == 4)"
+param *.node[*].prot.fakePos "(1 == 2)"
+param *.node[*].prot.fakeSpeed "(1 == 3)"
+param *.node[*].prot.maliciousAcc "-30 mpss"
+param *.node[*].prot.maliciousSpeed 150kmph
+param *.node[*].prot.packetSize 200
+param *.node[*].prot.priority 2
+param *.node[*].prot.shiftX "7 m"
+param *.node[*].prot.useControllerAcceleration true
+param *.node[*].protocol_type "\"SimplePlatooningBeaconing\""
+param *.node[*].scenario.accHeadway 0.1s
+param *.node[*].scenario.caccC1 0.5
+param *.node[*].scenario.caccOmegaN "0.2 Hz"
+param *.node[*].scenario.caccSpacing 11m
+param *.node[*].scenario.caccXi 1
+param *.node[*].scenario.controller "\"CACC\""
+param *.node[*].scenario.engineTau "0.5 s"
+param *.node[*].scenario.leaderHeadway 1.2s
+param *.node[*].scenario.leaderOscillationFrequency "0.2 Hz"
+param *.node[*].scenario.leaderSpeed 150kmph
+param *.node[*].scenario.oscillationAmplitude "10 kmph"
+param *.node[*].scenario.ploegH 0.5s
+param *.node[*].scenario.ploegKd 0.7
+param *.node[*].scenario.ploegKp 0.2
+param *.node[*].scenario.startOscillating "5 s"
+param *.node[*].scenario.useRealisticEngine false
+param *.node[*].scenario_type "\"SinusoidalScenario\""
+param *.node[*].unicast.packetLossRate 0
+param *.obstacles.debug false
+param *.playgroundSizeX 65000m
+param *.playgroundSizeY 25000m
+param *.playgroundSizeZ 50m
+param *.world.use2D false
+param *.world.useTorus false
+
+vector 0  scenario.node[0].appl  distance  ETV
+vector 1  scenario.node[0].appl  relativeSpeed  ETV
+vector 2  scenario.node[0].appl  nodeId  ETV
+vector 6  scenario.node[0].appl  acceleration  ETV
+vector 7  scenario.node[0].appl  controllerAcceleration  ETV
+vector 3  scenario.node[0].appl  speed  ETV
+vector 4  scenario.node[0].appl  posx  ETV
+vector 5  scenario.node[0].appl  posy  ETV
+vector 22  scenario.node[1].appl  distance  ETV
+vector 23  scenario.node[1].appl  relativeSpeed  ETV
+vector 24  scenario.node[1].appl  nodeId  ETV
+vector 28  scenario.node[1].appl  acceleration  ETV
+vector 29  scenario.node[1].appl  controllerAcceleration  ETV
+vector 25  scenario.node[1].appl  speed  ETV
+vector 26  scenario.node[1].appl  posx  ETV
+vector 27  scenario.node[1].appl  posy  ETV
+vector 44  scenario.node[2].appl  distance  ETV
+vector 45  scenario.node[2].appl  relativeSpeed  ETV
+vector 46  scenario.node[2].appl  nodeId  ETV
+vector 50  scenario.node[2].appl  acceleration  ETV
+vector 51  scenario.node[2].appl  controllerAcceleration  ETV
+vector 47  scenario.node[2].appl  speed  ETV
+vector 48  scenario.node[2].appl  posx  ETV
+vector 49  scenario.node[2].appl  posy  ETV
+vector 66  scenario.node[3].appl  distance  ETV
+vector 67  scenario.node[3].appl  relativeSpeed  ETV
+vector 68  scenario.node[3].appl  nodeId  ETV
+vector 72  scenario.node[3].appl  acceleration  ETV
+vector 73  scenario.node[3].appl  controllerAcceleration  ETV
+vector 69  scenario.node[3].appl  speed  ETV
+vector 70  scenario.node[3].appl  posx  ETV
+vector 71  scenario.node[3].appl  posy  ETV
+vector 88  scenario.node[4].appl  distance  ETV
+vector 89  scenario.node[4].appl  relativeSpeed  ETV
+vector 90  scenario.node[4].appl  nodeId  ETV
+vector 94  scenario.node[4].appl  acceleration  ETV
+vector 95  scenario.node[4].appl  controllerAcceleration  ETV
+vector 91  scenario.node[4].appl  speed  ETV
+vector 92  scenario.node[4].appl  posx  ETV
+vector 93  scenario.node[4].appl  posy  ETV
+vector 110  scenario.node[5].appl  distance  ETV
+vector 111  scenario.node[5].appl  relativeSpeed  ETV
+vector 112  scenario.node[5].appl  nodeId  ETV
+vector 116  scenario.node[5].appl  acceleration  ETV
+vector 117  scenario.node[5].appl  controllerAcceleration  ETV
+vector 113  scenario.node[5].appl  speed  ETV
+vector 114  scenario.node[5].appl  posx  ETV
+vector 115  scenario.node[5].appl  posy  ETV
+vector 132  scenario.node[6].appl  distance  ETV
+vector 133  scenario.node[6].appl  relativeSpeed  ETV
+vector 134  scenario.node[6].appl  nodeId  ETV
+vector 138  scenario.node[6].appl  acceleration  ETV
+vector 139  scenario.node[6].appl  controllerAcceleration  ETV
+vector 135  scenario.node[6].appl  speed  ETV
+vector 136  scenario.node[6].appl  posx  ETV
+vector 137  scenario.node[6].appl  posy  ETV
+vector 154  scenario.node[7].appl  distance  ETV
+vector 155  scenario.node[7].appl  relativeSpeed  ETV
+vector 156  scenario.node[7].appl  nodeId  ETV
+vector 160  scenario.node[7].appl  acceleration  ETV
+vector 161  scenario.node[7].appl  controllerAcceleration  ETV
+vector 157  scenario.node[7].appl  speed  ETV
+vector 158  scenario.node[7].appl  posx  ETV
+vector 159  scenario.node[7].appl  posy  ETV
+vector 58  scenario.node[2].prot  frontDelay  ETV
+vector 56  scenario.node[2].prot  frontDelayId  ETV
+vector 102  scenario.node[4].prot  frontDelay  ETV
+vector 100  scenario.node[4].prot  frontDelayId  ETV
+vector 146  scenario.node[6].prot  frontDelay  ETV
+vector 144  scenario.node[6].prot  frontDelayId  ETV
+vector 168  scenario.node[7].prot  frontDelay  ETV
+vector 166  scenario.node[7].prot  frontDelayId  ETV
+vector 124  scenario.node[5].prot  frontDelay  ETV
+vector 122  scenario.node[5].prot  frontDelayId  ETV
+vector 35  scenario.node[1].prot  leaderDelay  ETV
+vector 33  scenario.node[1].prot  leaderDelayId  ETV
+vector 36  scenario.node[1].prot  frontDelay  ETV
+vector 34  scenario.node[1].prot  frontDelayId  ETV
+vector 57  scenario.node[2].prot  leaderDelay  ETV
+vector 55  scenario.node[2].prot  leaderDelayId  ETV
+vector 79  scenario.node[3].prot  leaderDelay  ETV
+vector 77  scenario.node[3].prot  leaderDelayId  ETV
+vector 101  scenario.node[4].prot  leaderDelay  ETV
+vector 99  scenario.node[4].prot  leaderDelayId  ETV
+vector 123  scenario.node[5].prot  leaderDelay  ETV
+vector 121  scenario.node[5].prot  leaderDelayId  ETV
+vector 145  scenario.node[6].prot  leaderDelay  ETV
+vector 143  scenario.node[6].prot  leaderDelayId  ETV
+vector 167  scenario.node[7].prot  leaderDelay  ETV
+vector 165  scenario.node[7].prot  leaderDelayId  ETV
+vector 80  scenario.node[3].prot  frontDelay  ETV
+vector 78  scenario.node[3].prot  frontDelayId  ETV
+vector 8  scenario.node[0].prot  nodeId  ETV
+vector 9  scenario.node[0].prot  busyTime  ETV
+vector 10  scenario.node[0].prot  collisions  ETV
+vector 30  scenario.node[1].prot  nodeId  ETV
+vector 31  scenario.node[1].prot  busyTime  ETV
+vector 32  scenario.node[1].prot  collisions  ETV
+vector 52  scenario.node[2].prot  nodeId  ETV
+vector 53  scenario.node[2].prot  busyTime  ETV
+vector 54  scenario.node[2].prot  collisions  ETV
+vector 74  scenario.node[3].prot  nodeId  ETV
+vector 75  scenario.node[3].prot  busyTime  ETV
+vector 76  scenario.node[3].prot  collisions  ETV
+vector 96  scenario.node[4].prot  nodeId  ETV
+vector 97  scenario.node[4].prot  busyTime  ETV
+vector 98  scenario.node[4].prot  collisions  ETV
+vector 118  scenario.node[5].prot  nodeId  ETV
+vector 119  scenario.node[5].prot  busyTime  ETV
+vector 120  scenario.node[5].prot  collisions  ETV
+vector 140  scenario.node[6].prot  nodeId  ETV
+vector 141  scenario.node[6].prot  busyTime  ETV
+vector 142  scenario.node[6].prot  collisions  ETV
+vector 162  scenario.node[7].prot  nodeId  ETV
+vector 163  scenario.node[7].prot  busyTime  ETV
+vector 164  scenario.node[7].prot  collisions  ETV
+7	11241 8392 232 197095 1.11 36.41 354 -1.5 1.5 7.8220191971659 570.858830972
+6	19633 11123 232 197095 1.11 36.41 354 -1.4722746794739 1.4513407705138 0.041507209537173 380.97715328664
+5	30756 7146 232 197095 1.11 36.41 354 36.55 36.55 12938.7 472909.485
+4	37902 10651 232 197095 1.11 36.41 354 141.77205924948 1615.6294783076 311668.20546576 338894265.74117
+3	48553 10632 232 197095 1.11 36.41 354 40.376864578797 43.631381416411 14780.232064131 617369.4394274
+1	59185 5730 232 197095 1.11 36.41 354 0 0 0 0
+0	64915 6084 232 197095 1.11 36.41 354 -1 -1 -354 354
+2	70999 5730 232 197095 1.11 36.41 354 0 0 0 0
+10	76729 498 5168 194790 2 36 35 0 0 0 0
+9	77227 674 5168 194790 2 36 35 0.023297 0.02625 0.915797 0.023970875209
+8	77901 463 5168 194790 2 36 35 0 0 0 0
+51	78364 11408 234 197097 1.11 36.41 354 -1.509213596604 1.5122039307383 35.851195023824 501.04707923219
+50	89772 11461 234 197097 1.11 36.41 354 -1.4841297360832 1.4673660728072 35.409836500192 357.76960471942
+49	101233 7500 234 197097 1.11 36.41 354 36.55 36.55 12938.7 472909.485
+48	108733 10987 234 197097 1.11 36.41 354 111.77205924988 1597.1798533527 301209.23325293 321030347.41996
+47	119720 11007 234 197097 1.11 36.41 354 40.37087298373 45.204719070632 14896.983641048 627393.39448277
+45	130727 12238 234 197097 1.11 36.41 354 -0.55547836415547 0.012241032060388 -8.5747754970514 3.0971009578498
+44	142965 10976 234 197097 1.11 36.41 354 10.203069690157 11.033133658479 3889.0614098446 42729.440156444
+46	153941 6084 234 197097 1.11 36.41 354 2 2 708 1416
+58	160025 14126 832 197139 1.212435850589 36.412441617848 353 0.099998717025 0.100011802612 35.300004567813 3.5300009186172
+57	174151 14124 1244 197551 1.297802551073 36.497808234078 353 0.099998710927 0.100011802497 35.300004483559 3.5300009017668
+56	188275 9578 832 197139 1.212435850589 36.412441617848 353 2 2 706 1412
+55	197853 9566 1244 197551 1.297802551073 36.497808234078 353 2 2 706 1412
+54	207419 498 5170 194792 2 36 35 0 0 0 0
+53	207917 709 5170 194792 2 36 35 0.023296 0.02625 0.915796 0.023970828616
+52	208626 498 5170 194792 2 36 35 2 2 70 140
+73	209124 11378 235 197098 1.11 36.41 354 -1.4954488807893 1.4986508406297 39.722636746091 490.1319987971
+72	220502 11430 235 197098 1.11 36.41 354 -1.4697266324674 1.4522561965705 38.747439986176 354.48750729272
+71	231932 7500 235 197098 1.11 36.41 354 36.55 36.55 12938.7 472909.485
+70	239432 10994 235 197098 1.11 36.41 354 96.772059249878 1582.5617698867 295898.70040523 312077705.93364
+69	250426 11003 235 197098 1.11 36.41 354 40.385663984105 45.533123173473 14900.918781353 627746.08633503
+67	261429 12078 235 197098 1.11 36.41 354 -0.32932669268472 0.021653869345336 -4.28923866932 0.99415484743172
+66	273507 10982 235 197098 1.11 36.41 354 10.624651548027 11.052077848893 3894.6115505066 42848.320503678
+68	284489 6084 235 197098 1.11 36.41 354 3 3 1062 3186
+80	290573 14079 1312 197063 1.307224601108 36.407218571923 352 0.09999871402 0.100011802784 35.199992771369 3.5199985591907
+79	304652 14120 1250 197557 1.297802601108 36.497808282748 353 0.099998710814 0.100011802508 35.300004482194 3.5300009014938
+78	318772 9533 1312 197063 1.307224601108 36.407218571923 352 3 3 1056 3168
+77	328305 9564 1250 197557 1.297802601108 36.497808282748 353 3 3 1059 3177
+76	337869 498 5171 194793 2 36 35 0 0 0 0
+75	338367 709 5171 194793 2 36 35 0.023297 0.02625 0.915797 0.023970875209
+74	339076 498 5171 194793 2 36 35 3 3 105 315
+95	339574 11387 236 197099 1.11 36.41 354 -1.5015734350113 1.506086239001 42.383107680154 499.76580916276
+94	350961 11451 236 197099 1.11 36.41 354 -1.46716202919 1.4503898350611 40.671807320781 355.84009854277
+93	362412 7500 236 197099 1.11 36.41 354 36.55 36.55 12938.7 472909.485
+92	369912 10996 236 197099 1.11 36.41 354 81.772059249878 1567.7934022055 290587.87040223 303282136.01709
+91	380908 11002 236 197099 1.11 36.41 354 40.387101734642 45.719143146121 14903.301263867 627961.66315238
+89	391910 12114 236 197099 1.11 36.41 354 -0.18838331708133 0.015827589086236 -2.7699569139357 0.33485537722202
+88	404024 10975 236 197099 1.11 36.41 354 10.7720880807 11.016703913572 3894.8776526491 42853.637333563
+90	414999 6084 236 197099 1.11 36.41 354 4 4 1416 5664
+102	421083 14465 902 197209 1.235039950658 36.435045715858 353 0.099998716863 0.100011802623 35.300004565754 3.5300009182054
+101	435548 14453 1256 197563 1.297802651142 36.497808331959 353 0.099998710751 0.10001180251 35.300004481371 3.5300009013292
+100	450001 9915 902 197209 1.235039950658 36.435045715858 353 4 4 1412 5648
+99	459916 9553 1256 197563 1.297802651142 36.497808331959 353 4 4 1412 5648
+98	469469 498 5172 194794 2 36 35 0 0 0 0
+97	469967 709 5172 194794 2 36 35 0.023297 0.02625 0.915797 0.023970875209
+96	470676 498 5172 194794 2 36 35 4 4 140 560
+117	471174 11741 237 197100 1.11 36.41 354 -1.5284774904616 1.5300606340192 44.579254769536 515.45041956157
+116	482915 11820 237 197100 1.11 36.41 354 -1.4661745409356 1.4484846932703 41.747304233328 356.62205514546
+115	494735 7854 237 197100 1.11 36.41 354 36.55 36.55 12938.7 472909.485
+114	502589 11344 237 197100 1.11 36.41 354 66.772059249878 1552.8415570137 285273.78247628 294636212.44996
+113	513933 11331 237 197100 1.11 36.41 354 40.38903937577 45.825335121944 14903.820086025 628011.85594309
+111	525264 12397 237 197100 1.11 36.41 354 -0.10947636231546 0.020930830597997 -0.92554023139125 0.15364281579001
+110	537661 11334 237 197100 1.11 36.41 354 10.95396903134 11.061173127719 3898.0983023865 42924.395276814
+112	548995 6438 237 197100 1.11 36.41 354 5 5 1770 8850
+124	555433 14474 1178 197485 1.297389300901 36.497382064838 353 0.099998713425 0.100011802795 35.299991564491 3.5299983178168
+123	569907 14465 1262 197569 1.297802701177 36.497808381804 353 0.099998710715 0.100011802518 35.300004481181 3.5300009012912
+122	584372 9923 1178 197485 1.297389300901 36.497382064838 353 5 5 1765 8825
+121	594295 9914 1262 197569 1.297802701177 36.497808381804 353 5 5 1765 8825
+120	604209 533 5173 194795 2 36 35 0 0 0 0
+119	604742 744 5173 194795 2 36 35 0.023297 0.02625 0.915797 0.023970875209
+118	605486 533 5173 194795 2 36 35 5 5 175 875
+139	606019 11754 238 197101 1.11 36.41 354 -1.4999727098306 1.5046152425073 44.657389867794 498.10856217421
+138	617773 11808 238 197101 1.11 36.41 354 -1.4605505403345 1.4432664544969 42.330381496802 354.40819356443
+137	629581 7854 238 197101 1.11 36.41 354 36.55 36.55 12938.7 472909.485
+136	637435 11355 238 197101 1.11 36.41 354 51.772061157227 1537.8943894148 279961.66310164 286154691.91651
+135	648790 11347 238 197101 1.11 36.41 354 40.395474647428 45.879970970955 14904.368202503 628059.89957463
+133	660137 12381 238 197101 1.11 36.41 354 -0.058548089242699 0.023302081698453 -0.9655895205118 0.10378670148861
+132	672518 11361 238 197101 1.11 36.41 354 10.948260315882 11.018853797964 3896.1303369725 42880.913503731
+134	683879 6438 238 197101 1.11 36.41 354 6 6 2124 12744
+146	690317 14468 970 197271 1.248713050727 36.448705815578 353 0.099998713539 0.100011802791 35.299991565405 3.5299983179996
+145	704785 14463 1268 197575 1.297802751212 36.497808431647 353 0.099998710696 0.100011802519 35.300004480989 3.5300009012528
+144	719248 9914 970 197271 1.248713050727 36.448705815578 353 6 6 2118 12708
+143	729162 9914 1268 197575 1.297802751212 36.497808431647 353 6 6 2118 12708
+142	739076 533 5174 194796 2 36 35 0 0 0 0
+141	739609 744 5174 194796 2 36 35 0.023297 0.02625 0.915797 0.023970875209
+140	740353 533 5174 194796 2 36 35 6 6 210 1260
+161	740886 11744 239 197102 1.11 36.41 354 -1.5093935059599 1.5126459038324 45.396926182052 506.58828772709
+160	752630 11806 239 197102 1.11 36.41 354 -1.46196928442 1.4451435684705 42.680037017548 356.1023300286
+159	764436 7854 239 197102 1.11 36.41 354 36.55 36.55 12938.7 472909.485
+158	772290 11346 239 197102 1.11 36.41 354 36.772060680389 1522.9434047732 274649.9379048 277832988.21738
+157	783636 11355 239 197102 1.11 36.41 354 40.393375944627 45.913941293992 14904.870196663 628106.27572729
+155	794991 12415 239 197102 1.11 36.41 354 -0.038256261832061 0.024254039284379 -0.92529797534883 0.090149439575854
+154	807406 11360 239 197102 1.11 36.41 354 10.951664048057 11.017969422893 3895.7352367293 42872.223328368
+156	818766 6438 239 197102 1.11 36.41 354 7 7 2478 17346
+168	825204 14457 1040 197347 1.263894100762 36.463886865443 353 0.099998713527 0.100011802791 35.299991565235 3.5299983179654
+167	839661 14479 1274 197581 1.297802801246 36.497808481509 353 0.099998710684 0.100011802517 35.300004480817 3.5300009012184
+166	854140 9908 1040 197347 1.263894100762 36.463886865443 353 7 7 2471 17297
+165	864048 9914 1274 197581 1.297802801246 36.497808481509 353 7 7 2471 17297
+164	873962 533 5175 194797 2 36 35 0 0 0 0
+163	874495 744 5175 194797 2 36 35 0.023297 0.02625 0.915797 0.023970875209
+162	875239 533 5175 194797 2 36 35 7 7 245 1715
+22	875772 11026 233 197584 1.11 36.5 355 0 11.183041324928 3740.2458345255 40606.222431619
+23	886798 11821 233 197584 1.11 36.5 355 -4.2561224696688 0.12345093525423 -111.37658694764 384.94148883552
+24	898619 6101 233 197584 1.11 36.5 355 1 1 355 355
+25	904720 11024 233 197584 1.11 36.5 355 40.360517330394 44.682383982429 14933.344536466 628647.50333465
+26	915744 11023 233 197584 1.11 36.5 355 126.77205924988 1615.3895325764 308129.5186511 332734290.58727
+27	926767 7521 233 197584 1.11 36.5 355 36.55 36.55 12975.25 474245.3875
+28	934288 11512 233 197584 1.11 36.5 355 -1.4954736412641 1.476140170606 29.637736487008 358.72117727365
+29	945800 11450 233 197584 1.11 36.5 355 -1.5555551920973 1.5570065806119 29.67701103323 524.04421984859
+30	957250 498 5169 194791 2 36 35 1 1 35 35
+31	957748 709 5169 194791 2 36 35 0.023297 0.02625 0.915797 0.023970875209
+32	958457 498 5169 194791 2 36 35 0 0 0 0
+33	958955 9572 1238 197545 1.297802501039 36.49780818689 353 1 1 353 353
+34	968527 9572 1238 197545 1.297802501039 36.49780818689 353 1 1 353 353
+35	978099 14130 1238 197545 1.297802501039 36.49780818689 353 0.099998711115 0.100011802491 35.300004486405 3.530000902336
+36	992229 14130 1238 197545 1.297802501039 36.49780818689 353 0.099998711115 0.100011802491 35.300004486405 3.530000902336
